@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qtu.mapper.ItemDescMapper">
+  <resultMap id="BaseResultMap" type="com.qtu.entity.ItemDesc">
+    <result column="item_id" jdbcType="BIGINT" property="itemId" />
+    <result column="created" jdbcType="TIMESTAMP" property="created" />
+    <result column="updated" jdbcType="TIMESTAMP" property="updated" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.qtu.entity.ItemDesc">
+    <result column="item_desc" jdbcType="LONGVARCHAR" property="itemDesc" />
+  </resultMap>
+  <sql id="Blob_Column_List">
+    item_desc
+  </sql>
+  <insert id="insert" parameterType="com.qtu.entity.ItemDesc">
+    insert into tb_item_desc (item_id, created, updated, 
+      item_desc)
+    values (#{itemId,jdbcType=BIGINT}, #{created,jdbcType=TIMESTAMP}, #{updated,jdbcType=TIMESTAMP}, 
+      #{itemDesc,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.qtu.entity.ItemDesc">
+    insert into tb_item_desc
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="itemId != null">
+        item_id,
+      </if>
+      <if test="created != null">
+        created,
+      </if>
+      <if test="updated != null">
+        updated,
+      </if>
+      <if test="itemDesc != null">
+        item_desc,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="itemId != null">
+        #{itemId,jdbcType=BIGINT},
+      </if>
+      <if test="created != null">
+        #{created,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updated != null">
+        #{updated,jdbcType=TIMESTAMP},
+      </if>
+      <if test="itemDesc != null">
+        #{itemDesc,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="selectByItemId" resultMap="ResultMapWithBLOBs">
+    select * from tb_item_desc where item_id = #{itemId}
+  </select>
+  <update id="updateByPrimaryKeySelective">
+    update tb_item_desc d
+    <set>
+      <if test="created != null">
+        d.created = #{created},
+      </if>
+      <if test="updated != null">
+        d.updated = #{updated},
+      </if>
+      <if test="itemDesc != null">
+        item_desc = #{itemDesc}
+      </if>
+    </set>
+    where item_id = #{itemId}
+  </update>
+
+</mapper>

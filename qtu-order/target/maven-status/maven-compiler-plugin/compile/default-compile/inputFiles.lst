@@ -1,0 +1,12 @@
+D:\IdeaProjects\distributed\qtu-mall\qtu-order\src\main\java\com\qtu\order\service\impl\OrderServiceImpl.java
+D:\IdeaProjects\distributed\qtu-mall\qtu-order\src\main\java\com\qtu\order\QtuOrderApplication.java
+D:\IdeaProjects\distributed\qtu-mall\qtu-order\src\main\java\com\qtu\order\util\RedisUtil.java
+D:\IdeaProjects\distributed\qtu-mall\qtu-order\src\main\java\com\qtu\order\entity\OrderItem.java
+D:\IdeaProjects\distributed\qtu-mall\qtu-order\src\main\java\com\qtu\order\entity\OrderShipping.java
+D:\IdeaProjects\distributed\qtu-mall\qtu-order\src\main\java\com\qtu\order\service\OrderService.java
+D:\IdeaProjects\distributed\qtu-mall\qtu-order\src\main\java\com\qtu\order\controller\OrderController.java
+D:\IdeaProjects\distributed\qtu-mall\qtu-order\src\main\java\com\qtu\order\entity\Order.java
+D:\IdeaProjects\distributed\qtu-mall\qtu-order\src\main\java\com\qtu\order\mapper\OrderItemMapper.java
+D:\IdeaProjects\distributed\qtu-mall\qtu-order\src\main\java\com\qtu\order\mapper\OrderShippingMapper.java
+D:\IdeaProjects\distributed\qtu-mall\qtu-order\src\main\java\com\qtu\order\bean\OrderBean.java
+D:\IdeaProjects\distributed\qtu-mall\qtu-order\src\main\java\com\qtu\order\mapper\OrderMapper.java

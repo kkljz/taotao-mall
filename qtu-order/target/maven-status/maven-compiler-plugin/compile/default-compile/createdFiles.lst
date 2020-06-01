@@ -1,0 +1,12 @@
+com\qtu\order\entity\Order.class
+com\qtu\order\entity\OrderItem.class
+com\qtu\order\controller\OrderController.class
+com\qtu\order\QtuOrderApplication.class
+com\qtu\order\mapper\OrderItemMapper.class
+com\qtu\order\mapper\OrderMapper.class
+com\qtu\order\service\impl\OrderServiceImpl.class
+com\qtu\order\mapper\OrderShippingMapper.class
+com\qtu\order\service\OrderService.class
+com\qtu\order\entity\OrderShipping.class
+com\qtu\order\util\RedisUtil.class
+com\qtu\order\bean\OrderBean.class

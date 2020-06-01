@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="qtu-common" />
+        <module name="qtu-manager" />
+        <module name="qtu-order" />
+        <module name="qtu-portal" />
+        <module name="qtu-rest" />
+        <module name="qtu-search" />
+        <module name="qtu-sso" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="qtu-common" target="1.5" />
+      <module name="qtu-manager" target="1.5" />
+      <module name="qtu-order" target="1.5" />
+      <module name="qtu-parent" target="1.5" />
+      <module name="qtu-portal" target="1.5" />
+      <module name="qtu-rest" target="1.5" />
+      <module name="qtu-search" target="1.5" />
+      <module name="qtu-sso" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

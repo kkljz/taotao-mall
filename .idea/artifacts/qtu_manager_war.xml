@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="qtu-manager:war">
+    <output-path>$PROJECT_DIR$/qtu-manager/target</output-path>
+    <root id="archive" name="qtu-manager-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="qtu-manager:war exploded" />
+    </root>
+  </artifact>
+</component>

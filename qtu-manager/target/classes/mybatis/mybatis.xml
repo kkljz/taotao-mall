@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- mybatis的主配置文件 -->
+<configuration>
+    <properties resource="database.properties">
+    </properties>
+    <settings>
+        <setting name="logImpl" value="LOG4J" />
+        <!--懒加载-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--及时加载-->
+        <setting name="aggressiveLazyLoading" value="false"/>
+
+        <!-- 开启二级缓存 -->
+        <setting name="cacheEnabled" value="true" />
+    </settings>
+    <!--类型别名-->
+    <typeAliases>
+        <!--别名默认为类名（首字母小写）-->
+        <package name="com.qtu.entity"/>
+    </typeAliases>
+
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <!--<!–分页参数合理化  –>-->
+            <property name="reasonable" value="true"/>
+        </plugin>
+    </plugins>
+
+    <mappers>
+        <package name="com.qtu.mapper"></package>
+    </mappers>
+</configuration>

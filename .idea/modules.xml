@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/qtu-common/qtu-common.iml" filepath="$PROJECT_DIR$/qtu-common/qtu-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qtu-manager/qtu-manager.iml" filepath="$PROJECT_DIR$/qtu-manager/qtu-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qtu-order/qtu-order.iml" filepath="$PROJECT_DIR$/qtu-order/qtu-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qtu-parent/qtu-parent.iml" filepath="$PROJECT_DIR$/qtu-parent/qtu-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qtu-portal/qtu-portal.iml" filepath="$PROJECT_DIR$/qtu-portal/qtu-portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qtu-rest/qtu-rest.iml" filepath="$PROJECT_DIR$/qtu-rest/qtu-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qtu-search/qtu-search.iml" filepath="$PROJECT_DIR$/qtu-search/qtu-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qtu-sso/qtu-sso.iml" filepath="$PROJECT_DIR$/qtu-sso/qtu-sso.iml" />
+    </modules>
+  </component>
+</project>
