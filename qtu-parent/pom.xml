@@ -39,7 +39,7 @@
         <lombok.version>1.18.8</lombok.version>
         <joda-time.version>2.9.9</joda-time.version>
         <spring-boot.version>2.1.10.RELEASE</spring-boot.version>
-        <httpClient.version>4.5.6</httpClient.version>
+        <httpClient.version>4.5.13</httpClient.version>
     </properties>
 
     <dependencyManagement>
